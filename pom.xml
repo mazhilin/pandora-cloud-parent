@@ -5,28 +5,28 @@
          https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.pandroa.cloud</groupId>
-        <artifactId>pandroa-cloud-starter-parent</artifactId>
+        <groupId>com.pandora.cloud</groupId>
+        <artifactId>pandora-cloud-starter-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.pandroa.cloud</groupId>
-    <artifactId>pandroa-cloud-parent</artifactId>
+    <groupId>com.pandora.cloud</groupId>
+    <artifactId>pandora-cloud-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pandroa-cloud-parent</name>
-    <description>PandroaCloud云服务内部依赖管理</description>
+    <name>pandora-cloud-parent</name>
+    <description>pandoraCloud云服务内部依赖管理</description>
     <packaging>pom</packaging>
 
     <properties>
         <java.version>1.8</java.version>
-        <pandroa-cloud.version>0.0.1-SNAPSHOT</pandroa-cloud.version>
+        <pandora-cloud.version>0.0.1-SNAPSHOT</pandora-cloud.version>
     </properties>
     <dependencyManagement>
         <dependencies>
             <!--TurboCloud依赖配置-->
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-dependencies</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-dependencies</artifactId>
+                <version>${pandora-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -90,238 +90,238 @@
                 </exclusions>
             </dependency>
 
-            <!--pandroa-cloud-framework依赖配置-->
+            <!--pandora-cloud-framework依赖配置-->
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-boot</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-boot</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-nacos</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-
-            <!--pandroa-cloud-common依赖配置-->
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-common-api</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-common-base</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-common-center</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-common-domain</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-common-web</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-            <!--pandroa-cloud-dubbo依赖配置-->
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-dubbo-common</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-nacos</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
+            <!--pandora-cloud-common依赖配置-->
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-dubbo-provider</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-common-api</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-dubbo-consumer</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-common-base</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
-
-            <!--pandroa-cloud-kafka依赖配置-->
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-kafka-common</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-common-center</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-common-domain</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-common-web</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+            <!--pandora-cloud-dubbo依赖配置-->
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-dubbo-common</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-kafka-producer</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-dubbo-provider</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-kafka-consumer</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-
-            <!--pandroa-cloud-redismq依赖配置-->
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-redismq-common</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-dubbo-consumer</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
+            <!--pandora-cloud-kafka依赖配置-->
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-redismq-producer</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-redismq-consumer</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-
-            <!--pandroa-cloud-rocketmq依赖配置-->
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-rocketmq-common</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-kafka-common</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-rocketmq-producer</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-kafka-producer</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-rocketmq-consumer</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-
-            <!--pandroa-cloud-pulsar依赖配置-->
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-pulsar-common</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-kafka-consumer</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
+            <!--pandora-cloud-redismq依赖配置-->
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-pulsar-producer</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-pulsar-consumer</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-
-
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-extension</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-redismq-common</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-integration</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-redismq-producer</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-redismq-consumer</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+
+            <!--pandora-cloud-rocketmq依赖配置-->
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-rocketmq-common</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-scheduled</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-rocketmq-producer</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-rocketmq-consumer</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+
+            <!--pandora-cloud-pulsar依赖配置-->
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-pulsar-common</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-logger</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-pulsar-producer</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-pulsar-consumer</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-extension</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-mysql</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-integration</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-mybatis</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-scheduled</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-payment</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-logger</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-redis</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-mysql</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-security</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-mybatis</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-redisson</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-
-            <!--pandroa-cloud-sso依赖配置-->
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-sso-common</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-sso-server</artifactId>
-                <version>${pandroa-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-sso-client</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-payment</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-sso-shiro</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-redis</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.pandroa.cloud</groupId>
-                <artifactId>pandroa-cloud-sso-oauth</artifactId>
-                <version>${pandroa-cloud.version}</version>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-security</artifactId>
+                <version>${pandora-cloud.version}</version>
             </dependency>
 
-            <!--pandroa-cloud-framework依赖配置-->
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-redisson</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+
+            <!--pandora-cloud-sso依赖配置-->
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-sso-common</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-sso-server</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-sso-client</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-sso-shiro</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.pandora.cloud</groupId>
+                <artifactId>pandora-cloud-sso-oauth</artifactId>
+                <version>${pandora-cloud.version}</version>
+            </dependency>
+
+            <!--pandora-cloud-framework依赖配置-->
         </dependencies>
     </dependencyManagement>
 
 
     <modules>
-        <module>pandroa-cloud-boot</module>
-        <module>pandroa-cloud-common</module>
-        <module>pandroa-cloud-component</module>
-        <module>pandroa-cloud-framework</module>
-        <module>pandroa-cloud-middleware</module>
-        <module>pandroa-cloud-integration</module>
-        <module>pandroa-cloud-starter</module>
-        <module>pandroa-cloud-toolkit</module>
+        <module>pandora-cloud-boot</module>
+        <module>pandora-cloud-common</module>
+        <module>pandora-cloud-component</module>
+        <module>pandora-cloud-framework</module>
+        <module>pandora-cloud-middleware</module>
+        <module>pandora-cloud-integration</module>
+        <module>pandora-cloud-starter</module>
+        <module>pandora-cloud-toolkit</module>
     </modules>
 
 
